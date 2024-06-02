@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+</head>
+
+<body>
+  <h2>COURSE REGISTRATION FORM</h2>
+  <form>
+    <fieldset>
+      <legend><b>CONTACT DETAILS</b></legend><br>
+      <label for="name"><i>Name:</i></label><br>
+      <input type="text" id="name" name="name" required pattern="[a-zA-Z\s]{2,20}"
+        placeholder="Enter Full Name"><br><br>
+      <label for="mobile"><i>Mobile Number:</i></label><br>
+      <input type="tel" id="mobile" name="mobile" required pattern="\d{10}" placeholder="1234567890"><br><br>
+      <label for="email"><i>Email:</i></label><br>
+      <input type="email" id="email" name="email" required placeholder="example01@gmail.com"><br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><strong>PERSONAL DETAILS</strong></legend><br>
+      <label for="dob"><i>Date of Birth:</i></label><br>
+      <input type="date" id="dob" name="dob" required><br><br>
+      <label for="age"><i>Age:</i></label><br>
+      <input type="number" id="age" name="age" min="1" max="100"><br><br>
+      <label><i>Gender:</i></label><br>
+      <input type="radio" id="male" name="gender" value="male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="female">
+      <label for="female">Female</label>
+      <input type="radio" id="other" name="gender" value="other">
+      <label for="other">Other</label><br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><b>EDUCATION DETAILS</b></legend><br>
+      <label for="highest-education"><i>Highest Level of Education:</i></label><br>
+      <input list="education-levels" id="highest-education" name="highest-education" required>
+      <datalist id="education-levels">
+        <option value="High School">
+        <option value="Associate Degree">
+        <option value="Bachelor's Degree">
+        <option value="Master's Degree">
+        <option value="Doctorate">
+      </datalist><br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><b>COURSE SELECTION</b></legend><br>
+      <label for="course"><i>Choose a course:</i></label><br>
+      <input list="courses" id="course" name="course" required>
+      <datalist id="courses">
+        <option value="C Programming">
+        <option value="C++ Programming">
+        <option value="Python Programming">
+        <option value="Java Programming">
+        <option value="Python Full Stack">
+        <option value="Java Full Stack">
+        <option value="Web Development">
+        <option value="Data Science">
+        <option value="Graphic Design">
+        <option value="Digital Marketing">
+        <option value="Internet Of Things">
+        <option value="Embedded Systems">
+        <option value="Digital Image Processing">
+        <option value="Digital Electronics">
+      </datalist><br><br>
+      <label for="start-date"><i>Preferred Start Date:</i></label><br>
+      <input type="date" id="start-date" name="start-date" required><br><br>
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend><b>Current Enrollment Status</b></legend><br>
+      <label><i>Select your current status:</i></label><br>
+      <input type="checkbox" id="student" name="status" value="Student">
+      <label for="student">Student</label><br>
+      <input type="checkbox" id="job-seeker" name="status" value="Job Seeker">
+      <label for="job-seeker">Job Seeker</label><br>
+      <input type="checkbox" id="employed" name="status" value="Employed">
+      <label for="employed">Employed</label><br>
+      <input type="checkbox" id="other" name="status" value="Other">
+      <label for="other">Other</label><br><br>
+      <button type="submit">Submit</button>
+    </fieldset>
+  </form>
+</body>
+
+</html>
